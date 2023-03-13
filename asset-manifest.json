@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/flaschard-app/static/js/main.7e2ae02e.js",
-    "index.html": "/flaschard-app/index.html",
-    "main.7e2ae02e.js.map": "/flaschard-app/static/js/main.7e2ae02e.js.map"
+    "main.js": "/flashcard-app/static/js/main.f86b0fd5.js",
+    "index.html": "/flashcard-app/index.html",
+    "main.f86b0fd5.js.map": "/flashcard-app/static/js/main.f86b0fd5.js.map"
   },
   "entrypoints": [
-    "static/js/main.7e2ae02e.js"
+    "static/js/main.f86b0fd5.js"
   ]
 }
