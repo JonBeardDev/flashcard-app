@@ -36,7 +36,9 @@ function AddCard() {
   then clears the fields for the user to add the next card */
   const handleSubmit = async (event) => {
     event.preventDefault();
-    createCard(deckId, formData).then(setFormData(initialFormState));
+    createCard(deckId, formData)
+    .then(window.alert(`Card saved to ${deck.name}!\n\nSelect OK to add more cards to this deck.`))
+    .then(setFormData(initialFormState));
   };
 
   // Display only when the deck is loaded from API
