@@ -23,20 +23,23 @@ function DeckList() {
     <DeckCard key={deck.id} deck={deck} setDecks={setDecks} />
   ));
 
-  return (
-    <div className="container">
-      {/* Display a "Create Deck" button at the top of the page that links to the CreateDeck page */}
-      <Link to="/decks/new">
-        <button type="button" className="btn btn-secondary btn-lg m-2">
-          <PlusCircle style={{ verticalAlign: -3 }} /> Create Deck
-        </button>
-      </Link>
+  if (decks.length !== 0) {
+    return (
       <div className="container">
-        {/* Displays all cards for existing decks*/}
-        <div className="row">{deckList}</div>
+        {/* Display a "Create Deck" button at the top of the page that links to the CreateDeck page */}
+        <Link to="/decks/new">
+          <button type="button" className="btn btn-secondary btn-lg m-2">
+            <PlusCircle style={{ verticalAlign: -3 }} /> Create Deck
+          </button>
+        </Link>
+        <div className="container">
+          {/* Displays all cards for existing decks*/}
+          <div className="row">{deckList}</div>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  return "Loading...";
 }
 
 export default DeckList;
